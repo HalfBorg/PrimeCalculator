@@ -6,7 +6,7 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-log4rs = { version = "1" , features = ["all_components", "gzip","rolling_file_appender", "file_appender", "console_appender", "fixed_window_roller", "size_trigger", "yaml_format"]}
+log4rs = { version = "1" , features = ["all_components", "gzip","rolling_file_appender", "file_appender", "console_appender", "fixed_window_roller", "size_trigger", "yaml_format", "background_rotation"]}
 log = { version = "0", features = ["std"] }
 serde_yaml = "0"
 

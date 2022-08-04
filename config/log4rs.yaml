@@ -11,12 +11,12 @@ appenders:
     policy:
       trigger:
         kind: size
-        limit: 3Mb
+        limit: 30Mb
       roller:
         kind: fixed_window
         base: 1
         count: 5
-        pattern: "log/my{}.gz"
+        pattern: "log/my{}.log.gz"
 root:
   level: trace
   appenders:

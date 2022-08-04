@@ -12,12 +12,12 @@ fn main() {
     {
         info!("Program started, this is RELEASE!");
     }
-
-        trace!("My trace");
-        debug!("My Debug");
-        info!("My info");
-        warn!("My warning");
-        error!("My error");
-
+loop {
+    trace!("My trace");
+    debug!("My Debug");
+    info!("My info");
+    warn!("My warning");
+    error!("My error");
+}
     thread::sleep(time::Duration::from_millis(100));
 }
